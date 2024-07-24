@@ -6,7 +6,6 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { Call } from './twilio/entity/call.entity';
 
-
 @Module({
   imports: [
     TwilioModule,
@@ -33,5 +32,4 @@ import { Call } from './twilio/entity/call.entity';
   controllers: [AppController],
   providers: [AppService],
 })
-// console.log(ConfigService);
 export class AppModule {}
